@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="user-input">
+        <label for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+
+        <label for="gender">Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter your height">
+
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter your weight">
+
+        <label for="activity-level">Activity Level:</label>
+        <select id="activity-level">
+            <option value="sedentary">Sedentary</option>
+            <option value="moderate">Moderate</option>
+            <option value="active">Active</option>
+        </select>
+
+        <label for="meals">Number of Meals:</label>
+        <input type="number" id="meals" placeholder="Enter number of meals">
+
+        <label for="diet-preference">Diet Preference:</label>
+        <select id="diet-preference">
+            <option value="balanced">Balanced</option>
+            <option value="high-protein">High Protein</option>
+            <option value="low-carb">Low Carb</option>
+        </select>
+
+        <button onclick="generateMealPlan()">Generate Meal Plan</button>
+    </div>
+
+    <div id="meal-plan"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
